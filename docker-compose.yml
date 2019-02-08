@@ -30,7 +30,7 @@ services:
       #- /tmp/.X11-unix:/tmp/.X11-unix
     
 # Uncomment the following line to use an NVIDIA GPU (requires nvidia-docker)
-    runtime: nvidia
+    #runtime: nvidia
 
 # By default this container stay alive without running any command 
     command: tail /dev/null -f
