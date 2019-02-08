@@ -10,7 +10,7 @@ FROM python:2.7
 # Install OS packages:
 
 RUN apt update -y && apt install -y \
-sl
+nano 
 #python-dev \
 #python3-dev \
 #git \
@@ -18,7 +18,6 @@ sl
 #libsm6 \
 #libxext6 \
 #libxrender-dev \
-#nano \
 #vim
 
 ADD docker/requirements.txt .
