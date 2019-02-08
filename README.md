@@ -5,7 +5,7 @@ Isolate and speed up the implementation of a new repo
 ## Usage
 
 1. Clone the Dockerizer in the same folder where the code is:
-`git clone https://github.com/enric1994/dockerizer.git`
+`git clone https://github.com/enric1994/docker.git`
 2. Add all the Python dependencies into **docker/requirements.txt** and the OS dependencies in **docker/requirements_os.txt**
 3. Start Dockerizer
   ```
