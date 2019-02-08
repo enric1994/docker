@@ -10,13 +10,13 @@ FROM python:2.7
 # Install OS packages:
 
 RUN apt update -y && apt install -y \
-sl \
+sl
 #git \
 #ssh \
 #libsm6 \
 #libxext6 \
-#libxrender-dev
-#nano
+#libxrender-dev \
+#nano \
 #vim
 
 ADD docker/requirements.txt .
