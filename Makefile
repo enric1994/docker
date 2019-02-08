@@ -1,12 +1,12 @@
 run:
-	docker-compose up -d
+	@docker-compose up -d
 devel:
-	docker exec -it mycontainer bash
+	@docker exec -it my_container bash
 build:
-	docker-compose build
+	@docker-compose build
 down:
-	docker-compose down -v
+	@docker-compose down -v
 status:
-	docker ps -a --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
+	@docker ps -a --format "table {{.Names}}\t{{.Status}}\t{{.Ports}}"
 logs:
-	docker logs mycontainer -f
+	@docker logs my_container -f
