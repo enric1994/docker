@@ -1,5 +1,7 @@
 # Dockerizer
-Dockerize a folder before installing any undesirable dependency!
+Isolate and speed up the implementation of a new repo
+
+## Usage
 
 1. Clone the Dockerizer in the same folder where the code is:
 `git clone https://github.com/enric1994/dockerizer.git`
@@ -17,6 +19,7 @@ Dockerize a folder before installing any undesirable dependency!
 * Turn off the container: `make down`
 * Check the status of the container: `make status`
 * Visualize the logs: `make logs`
+
 ## Dependencies
 * [Docker and Docker Compose](https://gist.github.com/enric1994/3b5c20ddb2b4033c4498b92a71d909da)
 * [NVIDIA-Docker](https://github.com/NVIDIA/nvidia-docker#quickstart) (Optional, GPU required)
