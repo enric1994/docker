@@ -1,0 +1,36 @@
+version: '2.3'
+
+services:
+
+  my_container:
+    image: my_image
+    container_name: my_container
+    working_dir: /data
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+
+# Setup environment variables:
+    environment:
+      - PYTHONPATH=/data
+      # Uncomment the following line to plot images on Linux
+      #- DISPLAY=unix$DISPLAY
+      
+
+# Setup the ports you want to expose:
+    #ports:
+    #  - "6006:6006"
+
+# Setup the volumes you want to share:    
+    volumes:
+      - ../:/data
+      #Share the webcam with the container
+      #- /dev/video0:/dev/video0
+      # Uncomment the following line to plot images on Linux
+      #- /tmp/.X11-unix:/tmp/.X11-unix
+    
+# Uncomment the following line to use an NVIDIA GPU (requires nvidia-docker)
+    runtime: nvidia
+
+# By default this container stay alive without running any command 
+    command: tail /dev/null -f
