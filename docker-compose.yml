@@ -16,7 +16,6 @@ services:
       # Uncomment the following line to plot images on Linux
       #- DISPLAY=unix$DISPLAY
       
-
 # Setup the ports you want to expose:
     #ports:
     #  - "6006:6006"

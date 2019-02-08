@@ -1,4 +1,4 @@
-# Select a base image
+# Select a base image:
 
 FROM python:2.7
 #python:3.7
@@ -7,18 +7,13 @@ FROM python:2.7
 #nvidia/cuda:8.0-cudnn5-devel
 
 
-# Install OS packages:
+# Install OS packages (from requirements_os.txt):
 
-RUN apt update -y && apt install -y \
-nano 
-#python-dev \
-#python3-dev \
-#git \
-#ssh \
-#libsm6 \
-#libxext6 \
-#libxrender-dev \
-#vim
+ADD docker/requirements_os.txt .
+RUN apt update -y && apt install -y $(cat requirements_os.txt|grep -v '#')
+
+
+# Install Python packages (from requirements.txt):
 
 ADD docker/requirements.txt .
 RUN pip install -r requirements.txt

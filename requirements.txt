@@ -3,7 +3,7 @@
 
 ## Data science:
 
-#numpy
+numpy
 #scipy
 #pandas
 #scikit-learn
