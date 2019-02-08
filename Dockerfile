@@ -11,6 +11,8 @@ FROM python:2.7
 
 RUN apt update -y && apt install -y \
 sl
+#python-dev \
+#python3-dev \
 #git \
 #ssh \
 #libsm6 \
