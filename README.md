@@ -1,6 +1,7 @@
 # Dockerizer
 Isolate and speed up the implementation of a new repo
 
+![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fgithub.com%2Fenric1994%2Fdocker)
 ## Usage
 
 1. Clone the Dockerizer in the same folder where the code is:
