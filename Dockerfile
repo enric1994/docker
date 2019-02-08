@@ -1,7 +1,7 @@
 # Select a base image
 
 FROM python:2.7
-#python: 3.7
+#python:3.7
 #tensorflow/tensorflow:latest-gpu
 #tensorflow/tensorflow:latest-gpu-py3
 #nvidia/cuda:8.0-cudnn5-devel
