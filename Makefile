@@ -1,6 +1,6 @@
 run:
-	@docker-compose up -d
-devel:
+	@docker-compose up -d --build
+dev:
 	@docker exec -it my_container bash
 build:
 	@docker-compose build
