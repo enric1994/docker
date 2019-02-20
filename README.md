@@ -1,5 +1,5 @@
 # Dockerizer
-Isolate and speed up the implementation of a new repo
+Isolate and speed up the implementation of a new repo. Stop polluting your host machine with random packages!
 
 ![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fgithub.com%2Fenric1994%2Fdocker)
 ## Usage
@@ -13,7 +13,10 @@ Isolate and speed up the implementation of a new repo
   make run
   ```
 4.Jump inside the evironment:
-`make devel`
+`make dev`
+
+**Note: Remove the .git folder before pushing to other repositorie!**
+`rm -rf docker/.git`
 
 ## Other commands
 * Rebuild the container after modifying the image: `make build`
