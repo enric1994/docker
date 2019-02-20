@@ -15,8 +15,7 @@ Isolate and speed up the implementation of a new repo. Stop polluting your host 
 4.Jump inside the evironment:
 `make dev`
 
-**Note: Remove the .git folder before pushing to other repositorie!**
-`rm -rf docker/.git`
+**Note: Remove the .git folder before pushing to other repository!**: `rm -rf docker/.git`
 
 ## Other commands
 * Rebuild the container after modifying the image: `make build`
