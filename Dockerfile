@@ -1,10 +1,20 @@
 # Select a base image:
 
-FROM tensorflow/tensorflow:latest-gpu
-#tensorflow/tensorflow:latest-gpu-py3
+FROM tensorflow/tensorflow:latest-cpu
+
+#Use CUDA 10 (GPU drivers >= 410.48)
+#tensorflow/tensorflow:1.13.1-gpu-py3
+
+#Use CUDA 9 (GPU drivers >= 384.81)
+#tensorflow/tensorflow:1.9.0-gpu
+
+#Use CUDA 8 (GPU drivers >= 367.48)
+#tensorflow/tensorflow:1.4.0-gpu
+
+#nvidia/cuda:8.0-cudnn5-devel
+
 #python:2.7
 #python:3.7
-#nvidia/cuda:8.0-cudnn5-devel
 
 
 # Install OS packages (from requirements_os.txt):
