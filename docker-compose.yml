@@ -20,8 +20,8 @@ services:
       
 # Setup the ports you want to expose:
     #ports:
-    # Tensorboard port
-      #- "6006:6006"
+    # Jupyter port
+      #- "8888:8888"
 
 # Setup the volumes you want to share:    
     volumes:
