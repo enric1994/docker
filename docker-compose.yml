@@ -41,7 +41,7 @@ services:
 
 # Start a Tensorboard on localhost:6006 that process the logs folder
   # tensorboard:
-  #   image: tensorflow/tensorflow:latest-gpu
+  #   image: tensorflow/tensorflow:latest-cpu
   #   container_name: tensorboard
   #   working_dir: /logs
   #   ports:
