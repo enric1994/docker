@@ -1,6 +1,6 @@
 # Select a base image:
 
-FROM tensorflow/tensorflow:latest-cpu
+FROM tensorflow/tensorflow:latest
 
 #Use CUDA 10 (GPU drivers >= 410.48)
 #tensorflow/tensorflow:1.13.1-gpu-py3
