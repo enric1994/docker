@@ -17,6 +17,11 @@ Isolate and speed up the implementation of a new repo. Stop polluting your host 
 
 **Note: Remove the .git folder before pushing to other repository!**: `rm -rf docker/.git`
 
+## Alias
+Set this alias to automatically clone and remove the docker/.git:
+
+`alias dockerize='git clone https://github.com/enric1994/docker.git; rm -rf docker/.git'`
+
 ## Other commands
 * Rebuild the container after modifying the image: `make build`
 * Turn off the container: `make down`
